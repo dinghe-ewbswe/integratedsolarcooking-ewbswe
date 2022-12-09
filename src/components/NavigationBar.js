@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import {
   DropdownButton,
+  DropdownAbout,
   DropdownButtonProduct,
   DropdownButtonDonate,
 } from "../components/DropdownButton";
@@ -27,30 +28,41 @@ function NavigationBar() {
             display: "flex",
             direction: "row",
           }}
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/integratedsolarcooking")}
         >
-          <img src={ewblogo} alt="Logo" style={{ height: "2.5em" }} />
+          {/* <img src={ewblogo} alt="Logo" style={{ height: "2.5em" }} /> */}
+          <p style={{ fontSize: "24px", color: "#38ba7d" }}>
+            Integrated Solar Cooking
+          </p>
         </div>
       </ContainerRow>
-      <ContainerRow>
-        <DropdownButton title={"AboutUs"}></DropdownButton>
+      <ContainerRow
+        onClick={() => navigate("/SolarCooker")}
+        style={{ fontSize: "20px" }}
+      >
+        About Solar Cooker
+        {/* <DropdownButton title={"AboutUs"}></DropdownButton> */}
       </ContainerRow>
-      <ContainerRow>
-        <DropdownButtonProduct title={"Product"}></DropdownButtonProduct>
+      <ContainerRow
+        onClick={() => navigate("/Products")}
+        style={{ fontSize: "20px" }}
+      >
+        Products
+        {/* <DropdownButtonProduct title={"Product"}></DropdownButtonProduct> */}
       </ContainerRow>
-      <ContainerRow>
-        <Button
-          className="NavButton"
-          onClick={() => {
-            navigate("/Contact");
-          }}
-        >
-          Contact
-        </Button>
+      <ContainerRow
+        onClick={() => navigate("/Contact")}
+        style={{ fontSize: "20px" }}
+      >
+        Contact
       </ContainerRow>
-      <ContainerRow>
+      {/* <ContainerRow
+        onClick={() => navigate("/Donate")}
+        style={{ fontSize: "20px" }}
+      >
+        Donate{" "}
         <DropdownButtonDonate title={"Donate"}></DropdownButtonDonate>
-      </ContainerRow>
+      </ContainerRow> */}
     </Navivationbar>
   );
 }

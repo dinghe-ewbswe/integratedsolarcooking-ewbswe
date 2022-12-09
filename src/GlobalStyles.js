@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const ContainerCol = styled.div`
   margin: 2em 0 0 0;
   padding: 0 50px;

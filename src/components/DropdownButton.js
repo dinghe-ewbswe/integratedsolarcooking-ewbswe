@@ -45,7 +45,11 @@ export function DropdownButton(props) {
 
       <Dropdown.Menu as={NavigateMenu}>
         {AboutUs_list.map((i) => {
-          return <Dropdown.Item href="/SolarCooker" key={i}>{i}</Dropdown.Item>;
+          return (
+            <Dropdown.Item href="/SolarCooker" key={i}>
+              {i}
+            </Dropdown.Item>
+          );
         })}
       </Dropdown.Menu>
     </Dropdown>
@@ -93,7 +97,11 @@ export function DropdownButtonProduct(props) {
 
       <Dropdown.Menu as={NavigateMenu}>
         {Product_list.map((i) => {
-          return <Dropdown.Item href="/Products" key={i}>{i}</Dropdown.Item>;
+          return (
+            <Dropdown.Item href="/Products" key={i}>
+              {i}
+            </Dropdown.Item>
+          );
         })}
       </Dropdown.Menu>
     </Dropdown>
@@ -139,7 +147,11 @@ export function DropdownButtonDonate(props) {
 
       <Dropdown.Menu as={NavigateMenu}>
         {Donate_list.map((i) => {
-          return <Dropdown.Item href="/SolarCooker" key={i}>{i}</Dropdown.Item>;
+          return (
+            <Dropdown.Item href="/SolarCooker" key={i}>
+              {i}
+            </Dropdown.Item>
+          );
         })}
       </Dropdown.Menu>
     </Dropdown>
