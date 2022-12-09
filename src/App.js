@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingScreen from "./screens/LandingScreen";
+// import LandingScreen from "./screens/LandingScreen2";
+import AboutUsScreen from "./screens/AboutUs";
+import SolarCookerScreen from "./screens/SolarCooker";
+import React from "react";
+import ProductsScreen from "./screens/Products";
+import ContactScreen from "./screens/ContactScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path="/integratedsolarcooking" element={<LandingScreen />} />
+          <Route path="/AboutUs" element={<AboutUsScreen />} />
+          <Route path="/SolarCooker" element={<SolarCookerScreen />} />
+          <Route path="/Products" element={<ProductsScreen />} />
+          <Route path="/Contact" element={<ContactScreen />} />
+
+          <Route path="/next" element={<div>Next</div>} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
