@@ -1,16 +1,32 @@
 {
   "files": {
-    "main.css": "/integratedsolarcooking/static/css/main.073c9b0a.css",
-    "main.js": "/integratedsolarcooking/static/js/main.051024ca.js",
+    "main.css": "/integratedsolarcooking/static/css/main.b744bc7b.css",
+    "main.js": "/integratedsolarcooking/static/js/main.358a4a92.js",
     "static/js/787.0d0c0bc6.chunk.js": "/integratedsolarcooking/static/js/787.0d0c0bc6.chunk.js",
-    "static/media/logo.svg": "/integratedsolarcooking/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/b.jpg": "/integratedsolarcooking/static/media/b.d52828c37df764b6009b.jpg",
+    "static/media/q7.png": "/integratedsolarcooking/static/media/q7.9cad55aea826d1e8e4dd.png",
+    "static/media/q1.png": "/integratedsolarcooking/static/media/q1.648afd7026296f0b5850.png",
+    "static/media/prod1.png": "/integratedsolarcooking/static/media/prod1.692fe2d126e9f18a223a.png",
+    "static/media/q5.png": "/integratedsolarcooking/static/media/q5.a7ca091b6e17b146978e.png",
+    "static/media/q3.png": "/integratedsolarcooking/static/media/q3.9e032535b07b3ebc27ab.png",
+    "static/media/q4.png": "/integratedsolarcooking/static/media/q4.d228512aad240837e5ff.png",
+    "static/media/step3.png": "/integratedsolarcooking/static/media/step3.f4d11b4b8c7d905a5da8.png",
+    "static/media/q6.png": "/integratedsolarcooking/static/media/q6.b1159200db1fee36c7bb.png",
+    "static/media/solarslide2.jpg": "/integratedsolarcooking/static/media/solarslide2.34e93d3acb7763e35692.jpg",
+    "static/media/step4.png": "/integratedsolarcooking/static/media/step4.02a270e5b8357df37d02.png",
+    "static/media/prod2.jpeg": "/integratedsolarcooking/static/media/prod2.ad183177590c40031dcd.jpeg",
+    "static/media/solarslide3.jpg": "/integratedsolarcooking/static/media/solarslide3.1588f1f7f9dcb7ba090a.jpg",
+    "static/media/step2.png": "/integratedsolarcooking/static/media/step2.1c9ddee5f3ba94356ef3.png",
+    "static/media/prod3.png": "/integratedsolarcooking/static/media/prod3.9aa414f71ec4e2739629.png",
+    "static/media/step1.png": "/integratedsolarcooking/static/media/step1.571cb16576ad6507cc35.png",
+    "static/media/ewb_logo_RGB.svg": "/integratedsolarcooking/static/media/ewb_logo_RGB.5ab921bce4460f117281663517db953e.svg",
     "index.html": "/integratedsolarcooking/index.html",
-    "main.073c9b0a.css.map": "/integratedsolarcooking/static/css/main.073c9b0a.css.map",
-    "main.051024ca.js.map": "/integratedsolarcooking/static/js/main.051024ca.js.map",
+    "main.b744bc7b.css.map": "/integratedsolarcooking/static/css/main.b744bc7b.css.map",
+    "main.358a4a92.js.map": "/integratedsolarcooking/static/js/main.358a4a92.js.map",
     "787.0d0c0bc6.chunk.js.map": "/integratedsolarcooking/static/js/787.0d0c0bc6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.051024ca.js"
+    "static/css/main.b744bc7b.css",
+    "static/js/main.358a4a92.js"
   ]
 }
