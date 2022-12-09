@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/integratedsolarcooking/static/css/main.073c9b0a.css",
+    "main.js": "/integratedsolarcooking/static/js/main.051024ca.js",
+    "static/js/787.0d0c0bc6.chunk.js": "/integratedsolarcooking/static/js/787.0d0c0bc6.chunk.js",
+    "static/media/logo.svg": "/integratedsolarcooking/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/integratedsolarcooking/index.html",
+    "main.073c9b0a.css.map": "/integratedsolarcooking/static/css/main.073c9b0a.css.map",
+    "main.051024ca.js.map": "/integratedsolarcooking/static/js/main.051024ca.js.map",
+    "787.0d0c0bc6.chunk.js.map": "/integratedsolarcooking/static/js/787.0d0c0bc6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.051024ca.js"
+  ]
+}
