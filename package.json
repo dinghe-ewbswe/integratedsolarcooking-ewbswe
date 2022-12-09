@@ -1,6 +1,6 @@
 {
-  "homepage": "http://nicole-tl.github.io/my_app",
-  "name": "my_app",
+  "homepage": "http://nicole-tl.github.io/integratedsolarcooking",
+  "name": "integratedsolarcooking",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
