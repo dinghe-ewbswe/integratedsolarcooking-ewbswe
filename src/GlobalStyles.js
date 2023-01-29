@@ -1,4 +1,15 @@
 import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    color: rgba(0, 0, 0, 0.8);  }
+`;
+
+export default GlobalStyle;
 
 export const ContainerCol = styled.div`
   margin: 2em 0 0 0;

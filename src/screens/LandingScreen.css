@@ -1,0 +1,71 @@
+.LandingBackground {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../../src/images/solarslide2.jpg");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingDiv {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.h1Font {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.h1Font:hover {
+  scale: 1.2;
+}
+
+.Hamburger {
+  position: absolute !important;
+}
+
+.Introtext {
+  padding-top: 1em;
+  font-size: 24px;
+  text-align: center;
+}
+
+.ReadMoreButton {
+  background: none;
+  border: none;
+  text-align: center;
+  transition: all;
+  cursor: pointer;
+}
+
+.ReadMoreButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.ReadMoreButton span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.ReadMoreButton:hover span {
+  padding-right: 20px;
+  background-color: rgb(203, 210, 210);
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.ReadMoreButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}

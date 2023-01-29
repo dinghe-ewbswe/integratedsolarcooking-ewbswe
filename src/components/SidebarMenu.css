@@ -1,0 +1,13 @@
+.sidebartitle {
+  font-size: 20px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.sidebartitle:hover {
+  text-shadow: 1px 1px 1px #585959;
+}
+
+.LogoTitle {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}

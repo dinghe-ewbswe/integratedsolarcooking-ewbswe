@@ -11,24 +11,35 @@ import p7 from "../images/q7.png";
 
 function Types() {
   return (
-    <div style={{ marginTop: "3em", marginBottom: "3em" }}>
-      <h1 id="Type of Solar Cooker">Type of Solar Cooker</h1>
-      <Col>
+    <div
+      style={{
+        marginTop: "3em",
+        marginBottom: "3em",
+        paddingLeft: "100px",
+        paddingRight: "100px",
+      }}
+    >
+      <h2 id="Type of Solar Cooker">Type of Solar Cooker</h2>
+      <div style={{ marginBottom: "1em" }}>
+        There are different types of solar cookers. Complexity and prices vary a
+        lot. The principles are explained below and if you want to learn more,
+        have a look at the Wiki page of solar cookers international.
+      </div>
+
+      <div>
         <Row>
           <Col>
             <div>
-              <h2 style={{ fontSize: "20px" }} id="Box ovens">
-                Box ovens
-              </h2>
-              <h4>
+              <h3 id="Box ovens">Box ovens</h3>
+              <text>
                 This type of cooker has the advantage of slow, even cooking of
                 large quantities of food. Variations include slanting the face
                 toward the sun and the number of reflectors.
-              </h4>
+              </text>
               <br />
               <Row>
                 <Col>
-                  <h4 style={{ fontWeight: "bold" }}>Advantage</h4>
+                  <text style={{ fontWeight: "bold" }}>Advantage</text>
                   <ul>
                     <li>
                       Some large enough to cook with multiple{" "}
@@ -47,8 +58,9 @@ function Types() {
                     </li>
                   </ul>
                 </Col>
+
                 <Col>
-                  <h4 style={{ fontWeight: "bold" }}>Disadvantage</h4>
+                  <text style={{ fontWeight: "bold" }}>Disadvantage</text>
                   <li>
                     The box design may block light entering the cooking chamber
                     unless the unit is tipped.
@@ -61,16 +73,18 @@ function Types() {
               </Row>
 
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src={p1} alt="logo" style={{ height: "20em" }} />{" "}
+                <img
+                  src={p1}
+                  alt="logo"
+                  style={{ height: "20em", paddingTop: "2em" }}
+                />{" "}
               </div>
             </div>
           </Col>
           <Col>
             <div>
-              <h2 style={{ fontSize: "20px" }} id="Box ovens">
-                The Conical Cooker
-              </h2>
-              <h4>
+              <h3 id="The Conical Cooker">The Conical Cooker</h3>
+              <text>
                 A conical solar cooker has a large cooking power and is
                 relatively cheap. It consists of a piece of iron bent into a
                 conical shape, which is covered at the inside by reflecting
@@ -87,9 +101,13 @@ function Types() {
                 the horizon. The cooker was designed by Mr. Samuel Odhiambo of
                 Asulma Centre, Nairobi, Kenya in collaboration with Mr. Henk
                 Blok from the foundation Solar Cooking Kozon, The Netherlands.
-              </h4>
+              </text>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src={p2} alt="logo" style={{ height: "20em" }} />{" "}
+                <img
+                  src={p2}
+                  alt="logo"
+                  style={{ height: "20em", paddingTop: "2em" }}
+                />{" "}
               </div>
             </div>
           </Col>
@@ -99,10 +117,8 @@ function Types() {
         <Row>
           <Col>
             <div>
-              <h2 style={{ fontSize: "20px" }} id="Box ovens">
-                Panel ovens
-              </h2>
-              <h4>
+              <h3 id="Box ovens">Panel ovens</h3>
+              <text>
                 In this design, flat panels concentrate the sun's rays onto a
                 pot inside a plastic bag or under a glass bowl. To produce a
                 panel oven you need cardboard, aluminum foil and some glue.
@@ -114,12 +130,12 @@ function Types() {
                 >
                   here.
                 </a>
-              </h4>
+              </text>
               <br />
 
               <Row>
                 <Col>
-                  <h4 style={{ fontWeight: "bold" }}>Advantage</h4>
+                  <text style={{ fontWeight: "bold" }}>Advantage</text>
                   <ul>
                     <li>
                       Inexpensive to build or buy, and typically can be
@@ -132,7 +148,7 @@ function Types() {
                   </ul>
                 </Col>
                 <Col>
-                  <h4 style={{ fontWeight: "bold" }}>Disadvantage</h4>
+                  <text style={{ fontWeight: "bold" }}>Disadvantage</text>
                   <li>
                     Achieves usually not more than 110 - 170 °C (230 - 340 °F),
                     and cannot fry foods.
@@ -144,27 +160,29 @@ function Types() {
                 </Col>
               </Row>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src={p3} alt="logo" style={{ height: "20em" }} />{" "}
+                <img
+                  src={p3}
+                  alt="logo"
+                  style={{ height: "20em", paddingTop: "2em" }}
+                />{" "}
               </div>
             </div>
           </Col>
           <Col>
             <div>
-              <h2 style={{ fontSize: "20px" }} id="Box ovens">
-                Parabolic cookers
-              </h2>
-              <h4>
+              <h3 id="Parabolic cookers">Parabolic cookers</h3>
+              <text>
                 These are usually concave disks that focus the light onto the
                 bottom of a pot. The advantage is that foods cook about as fast
                 as on a conventional stove. The disadvantage is that they are
                 complicated to make, they must be turned often to follow the
                 sun.
-              </h4>
+              </text>
               <br />
 
               <Row>
                 <Col>
-                  <h4 style={{ fontWeight: "bold" }}>Advantage</h4>
+                  <text style={{ fontWeight: "bold" }}>Advantage</text>
                   <ul>
                     <li>
                       Cooking times are similar to a traditional stovetop.
@@ -176,7 +194,7 @@ function Types() {
                   </ul>
                 </Col>
                 <Col>
-                  <h4 style={{ fontWeight: "bold" }}>Disadvantage</h4>
+                  <text style={{ fontWeight: "bold" }}>Disadvantage</text>
                   <li>
                     Requires periodic reorientation, often every fifteen
                     minutes, which may be done with a mechanical
@@ -206,36 +224,40 @@ function Types() {
         <Row>
           <Col>
             <div>
-              <h2 style={{ fontSize: "20px" }} id="Box ovens">
-                Fresnel Lens Cookers
-              </h2>
-              <h4>
+              <h3 id="Fresnel Lens Cookers">Fresnel Lens Cookers</h3>
+              <text>
                 A Fresnel lens can be produced in soft plastic material. Thus it
                 can be rolled and easy to transport. Heliac AS in Denmark
                 produces one lens and has constructed a solar cooker where you
                 can actually cook standing up. We are being warned that due to
                 the risk of fire it is preferred to be constructed in steel and
                 not wood.
-              </h4>
+              </text>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src={p5} alt="logo" style={{ height: "20em" }} />{" "}
+                <img
+                  src={p5}
+                  alt="logo"
+                  style={{ height: "20em", paddingTop: "2em" }}
+                />{" "}
               </div>
             </div>
           </Col>
           <Col>
             <div>
-              <h2 style={{ fontSize: "20px" }} id="Box ovens">
-                Scheffler reflector
-              </h2>
-              <h4>
+              <h3 id="Scheffler reflector">Scheffler reflector</h3>
+              <text>
                 The Scheffler reflector (named after Wolfgang Scheffler who
                 invented it) is a special cooker which needs a sun tracker and
                 is mainly used for institutional cooking. A great advantage is
                 that you can cook indoors.See:
                 http://www.solare-bruecke.org/index.php/en/die-scheffler-reflektoren
-              </h4>
+              </text>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src={p6} alt="logo" style={{ height: "20em" }} />{" "}
+                <img
+                  src={p6}
+                  alt="logo"
+                  style={{ height: "20em", paddingTop: "2em" }}
+                />{" "}
               </div>
             </div>
           </Col>
@@ -245,10 +267,8 @@ function Types() {
         <Row>
           <Col>
             <div>
-              <h2 style={{ fontSize: "20px" }} id="Box ovens">
-                Evacuated tube cookers
-              </h2>
-              <h4>
+              <h3 id="Evacuated tube cookers">Evacuated tube cookers</h3>
+              <text>
                 Evacuated tube means that the cooking chamber is constructed of
                 two layers of blown glass in the shape of a tube, where the air
                 has been removed between the layers. Heat loss happens primarily
@@ -262,15 +282,19 @@ function Types() {
                 in glass technology is allowing for larger diameter tubes to be
                 fabricated, which will allow larger cooking trays to be inserted
                 inside.
-              </h4>
+              </text>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <img src={p7} alt="logo" style={{ height: "20em" }} />{" "}
+                <img
+                  src={p7}
+                  alt="logo"
+                  style={{ height: "20em", paddingTop: "2em" }}
+                />{" "}
               </div>
             </div>
           </Col>
           <Col></Col>
         </Row>
-      </Col>
+      </div>
     </div>
   );
 }

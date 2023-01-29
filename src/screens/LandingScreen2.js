@@ -1,63 +1,69 @@
-import React, { Component, Suspense } from "react";
-import { useTranslation, withTranslation, Trans } from "react-i18next";
+import "./LandingScreen.css";
+import React from "react";
+import GlobalStyle from "../GlobalStyles";
+import { useNavigate } from "react-router";
+import SidebarMenu from "../components/SidebarMenu";
+import { ContainerCol } from "../GlobalStyles";
 
-// use hoc for class based components
-class LegacyWelcomeClass extends Component {
-  render() {
-    const { t } = this.props;
-    return <h2>{t("title")}</h2>;
-  }
-}
-const Welcome = withTranslation()(LegacyWelcomeClass);
+function LandingScreen(props) {
+  const navigate = useNavigate();
 
-// Component using the Trans component
-function MyComponent() {
   return (
-    <Trans i18nKey="description.part1">
-      To get started, edit <code>src/App.js</code> and save to reload.
-    </Trans>
+    <>
+      <GlobalStyle />
+      {props.isOpen ? <SidebarMenu /> : <></>}
+      <ContainerCol className="landingDiv">
+        <div
+          style={{
+            height: "25rem",
+            display: "flex",
+            flexDirection: "row",
+          }}
+        >
+          <div
+            className={"LandingBackground"}
+            style={{ width: "33.33%", height: "100%" }}
+          >
+            <h1 className="h1Font">Solar Cooker</h1>
+          </div>
+          <div
+            className={"LandingBackground"}
+            style={{ width: "33.33%", height: "100%" }}
+          >
+            <h1 className="h1Font">Fireless Cooker</h1>
+          </div>
+          <div
+            className={"LandingBackground"}
+            style={{ width: "33.33%", height: "100%" }}
+          >
+            <h1 className="h1Font">Fuel Saving Stove</h1>
+          </div>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-evenly" }}></div>
+        <div className="Introtext">
+          <h1>Integrated Solar Cooking</h1>
+          Integrated solar cooking (ISC) can improve both health and economy for
+          families that use firewood, charcoal, kerosene or gas for cooking. A
+          transition to ISC will reduce deforestation and also reduce carbon
+          emission and thus reduce global warming.
+          <br />
+          <button
+            className="ReadMoreButton"
+            onClick={() => navigate("/AboutSolarCooking")}
+          >
+            {" "}
+            <span>Read more</span>
+          </button>{" "}
+          <br />
+          <br />
+          <b style={{ fontSize: "20px" }}>
+            If you sell equipment for integrated solar cooking and want your
+            products to be seen on this web site send an e-mail to ….
+          </b>
+        </div>{" "}
+      </ContainerCol>
+    </>
   );
 }
 
-// page uses the hook
-function Page() {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
-
-  return (
-    <div className="App">
-      <div className="App-header">
-        <Welcome />
-        <button type="button" onClick={() => changeLanguage("de")}>
-          de
-        </button>
-        <button type="button" onClick={() => changeLanguage("en")}>
-          en
-        </button>
-      </div>
-      <div className="App-intro">
-        <MyComponent />
-      </div>
-      <div>{t("description.part2")}</div>
-    </div>
-  );
-}
-
-// loading component for suspense fallback
-const Loader = () => (
-  <div className="App">
-    <div>loading...</div>
-  </div>
-);
-
-// here app catches the suspense from page in case translations are not yet loaded
-export default function App() {
-  return (
-    <Suspense fallback={<Loader />}>
-      <Page />
-    </Suspense>
-  );
-}
+export default LandingScreen;

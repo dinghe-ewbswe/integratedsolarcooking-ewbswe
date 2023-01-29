@@ -8,7 +8,7 @@ import GlobalStyles, {
 import React from "react";
 import NavigationBar from "../components/NavigationBar";
 
-function AboutUsScreen() {
+function AboutSolarCooking() {
   return (
     <>
       <NavigationBar />
@@ -20,4 +20,4 @@ function AboutUsScreen() {
   );
 }
 
-export default AboutUsScreen;
+export default AboutSolarCooking;
