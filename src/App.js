@@ -1,5 +1,10 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import LandingScreen from "./screens/LandingScreen2";
 import FirelessCooker from "./screens/FirelessCooker";
 import SolarCookerScreen from "./screens/SolarCooker";
@@ -21,7 +26,7 @@ function App() {
         <Router>
           <Routes>
             <Route
-              path="/Integratedsolarcooking"
+              path="/Integratedsolarcooking/"
               element={<LandingScreen isOpen={isOpen} />}
             />
             <Route
@@ -44,7 +49,10 @@ function App() {
               path="/Contact"
               element={<ContactScreen isOpen={isOpen} />}
             />
-            <Route path="/next" element={<div isOpen={isOpen}>Next</div>} />
+            <Route
+              path="/*"
+              element={<Navigate to="/Integratedsolarcooking" replace />}
+            />
           </Routes>
         </Router>
       </div>
