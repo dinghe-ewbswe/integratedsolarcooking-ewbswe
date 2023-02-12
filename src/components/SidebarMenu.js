@@ -16,25 +16,62 @@ export default function SidebarMenu() {
           Integrated Solar Cooking
         </p>
       </ContainerCol>
-      <ContainerCol
-        onClick={() => navigate("/SolarCooker")}
-        className="sidebartitle"
-      >
-        About Solar Cooker
-        {/* <DropdownButton title={"AboutUs"}></DropdownButton> */}
+      <ContainerCol className="sidebardiv">
+        <div className="sidebartitle" onClick={() => navigate("/SolarCooker")}>
+          {" "}
+          About Solar Cooker
+        </div>
+        <div
+          className="subsidebartitle"
+          onClick={() => (window.location.href = "#HowtheSolarCookersWork")}
+        >
+          {" "}
+          How the Solar Cookers Work
+        </div>
+        <div
+          className="subsidebartitle"
+          onClick={() => (window.location.href = "#HowtoUse")}
+        >
+          {" "}
+          How To Use a Solar Cooker
+        </div>
+        <div
+          className="subsidebartitle"
+          onClick={() => (window.location.href = "#TypeofSolarCooker")}
+        >
+          {" "}
+          Type of Solar Cooker
+        </div>
       </ContainerCol>
-      <ContainerCol
-        onClick={() => navigate("/Products")}
-        className="sidebartitle"
-      >
-        Products
+      <ContainerCol className="sidebardiv">
+        <div className="sidebartitle" onClick={() => navigate("/Products")}>
+          {" "}
+          Product
+        </div>{" "}
         {/* <DropdownButtonProduct title={"Product"}></DropdownButtonProduct> */}
       </ContainerCol>
-      <ContainerCol
-        onClick={() => navigate("/Contact")}
-        className="sidebartitle"
-      >
-        Contact
+      <ContainerCol className="sidebardiv">
+        <div
+          className="sidebartitle"
+          onClick={() => navigate("/FirelessCooker")}
+        >
+          {" "}
+          Fireless Cooker
+        </div>
+      </ContainerCol>
+      <ContainerCol className="sidebardiv">
+        <div
+          className="sidebartitle"
+          onClick={() => navigate("/FuelSavingStove")}
+        >
+          {" "}
+          Fuel Saving Stove{" "}
+        </div>
+      </ContainerCol>
+      <ContainerCol className="sidebardiv">
+        <div className="sidebartitle" onClick={() => navigate("/Contact")}>
+          Contact
+        </div>
       </ContainerCol>
     </div>
   );

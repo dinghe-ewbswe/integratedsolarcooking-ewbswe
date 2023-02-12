@@ -1,7 +1,7 @@
 function HowToUse() {
   return (
     <div style={{ marginBottom: "3em" }}>
-      <h2>How To Use a Solar Cooker</h2>
+      <h2 id="HowtoUse">How To Use a Solar Cooker</h2>
       <div
         style={{
           display: "flex",

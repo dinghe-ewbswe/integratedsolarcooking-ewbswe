@@ -8,6 +8,7 @@ import p4 from "../images/q4.png";
 import p5 from "../images/q5.png";
 import p6 from "../images/q6.png";
 import p7 from "../images/q7.png";
+import { Link } from "react-router-dom";
 
 function Types() {
   return (
@@ -19,13 +20,21 @@ function Types() {
         paddingRight: "100px",
       }}
     >
-      <h2 id="Type of Solar Cooker">Type of Solar Cooker</h2>
+      <h2 id="TypeofSolarCooker">Type of Solar Cooker</h2>
       <div style={{ marginBottom: "1em" }}>
         There are different types of solar cookers. Complexity and prices vary a
         lot. The principles are explained below and if you want to learn more,
-        have a look at the Wiki page of solar cookers international.
+        have a look at the
+        <a
+          href="https://solarcooking.fandom.com/wiki/Introduction_to_solar_cooking"
+          target="_blank"
+        >
+          {" "}
+          Wiki page
+        </a>{" "}
+        of Solar Cookers International.
       </div>
-
+      <br />
       <div>
         <Row>
           <Col>

@@ -7,7 +7,7 @@ import step4 from "../images/step4.png";
 function HowToCook() {
   return (
     <div style={{ marginBottom: "3em" }}>
-      <h2 id="How the Solar Cookers Work">How the Solar Cookers Work</h2>
+      <h2 id="HowtheSolarCookersWork">How the Solar Cookers Work</h2>
       <Stack gap={3}>
         The sun gives you free fuel, so use it.
         <div>

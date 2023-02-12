@@ -3,27 +3,62 @@
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.4)
     ),
-    url("../../src/images/solarslide2.jpg");
+    url("../../src/images/SolarCooker.JPG");
   background-size: cover;
+  background-position: center;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.LandingBackgroundFireless {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../../src/images/FirelessCooker.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LandingBackgroundFuel {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url("../../src/images/FuelSavingStove.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .landingDiv {
   padding: 0 !important;
   margin: 0 !important;
 }
 
 .h1Font {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.h1Font:hover {
+.LandingBackground:hover .h1Font {
   scale: 1.2;
 }
 
+.LandingBackgroundFireless:hover .h1Font {
+  scale: 1.2;
+}
+
+.LandingBackgroundFuel:hover .h1Font {
+  scale: 1.2;
+}
 .Hamburger {
   position: absolute !important;
 }

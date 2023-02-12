@@ -1,13 +1,14 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingScreen from "./screens/LandingScreen2";
-import AboutSolarCooking from "./screens/AboutSolarCooking";
+import FirelessCooker from "./screens/FirelessCooker";
 import SolarCookerScreen from "./screens/SolarCooker";
 import React from "react";
 import ProductsScreen from "./screens/Products";
 import ContactScreen from "./screens/ContactScreen";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
+import FuelSavingStove from "./screens/FuelSavingStove";
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -24,12 +25,16 @@ function App() {
               element={<LandingScreen isOpen={isOpen} />}
             />
             <Route
-              path="/AboutSolarCooking"
-              element={<AboutSolarCooking isOpen={isOpen} />}
+              path="/FirelessCooker"
+              element={<FirelessCooker isOpen={isOpen} />}
             />
             <Route
               path="/SolarCooker"
               element={<SolarCookerScreen isOpen={isOpen} />}
+            />
+            <Route
+              path="/FuelSavingStove"
+              element={<FuelSavingStove isOpen={isOpen} />}
             />
             <Route
               path="/Products"
