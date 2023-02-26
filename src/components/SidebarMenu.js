@@ -1,9 +1,11 @@
 import { ContainerCol } from "../GlobalStyles";
 import { useNavigate } from "react-router-dom";
 import "./SidebarMenu.css";
+import { useState } from "react";
 
 export default function SidebarMenu() {
   const navigate = useNavigate();
+  const [SolarCookerOpen, setSolarCookerOpen] = useState(false);
 
   return (
     <div style={{ paddingTop: "50px" }}>
@@ -17,36 +19,53 @@ export default function SidebarMenu() {
         </p>
       </ContainerCol>
       <ContainerCol className="sidebardiv">
-        <div className="sidebartitle" onClick={() => navigate("/SolarCooker")}>
+        <div
+          className="sidebartitle"
+          onClick={() => {
+            navigate("/SolarCooker");
+            setSolarCookerOpen(!SolarCookerOpen);
+            console.log(SolarCookerOpen);
+          }}
+        >
           {" "}
           About Solar Cooker
         </div>
-        <div
-          className="subsidebartitle"
-          onClick={() => (window.location.href = "#HowtheSolarCookersWork")}
-        >
-          {" "}
-          How the Solar Cookers Work
-        </div>
-        <div
-          className="subsidebartitle"
-          onClick={() => (window.location.href = "#HowtoUse")}
-        >
-          {" "}
-          How To Use a Solar Cooker
-        </div>
-        <div
-          className="subsidebartitle"
-          onClick={() => (window.location.href = "#TypeofSolarCooker")}
-        >
-          {" "}
-          Type of Solar Cooker
-        </div>
+        {window.location.href.includes("/SolarCooker") == true ? (
+          <>
+            <div
+              className="subsidebartitle"
+              onClick={() =>
+                (window.location.href = "/SolarCooker#HowtheSolarCookersWork")
+              }
+            >
+              {" "}
+              How the Solar Cookers Work
+            </div>
+            <div
+              className="subsidebartitle"
+              onClick={() => (window.location.href = "/SolarCooker#HowtoUse")}
+            >
+              {" "}
+              How To Use a Solar Cooker
+            </div>
+            <div
+              className="subsidebartitle"
+              onClick={() =>
+                (window.location.href = "/SolarCooker#TypeofSolarCooker")
+              }
+            >
+              {" "}
+              Type of Solar Cooker
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
       </ContainerCol>
       <ContainerCol className="sidebardiv">
         <div className="sidebartitle" onClick={() => navigate("/Products")}>
           {" "}
-          Product
+          Where to Buy
         </div>{" "}
         {/* <DropdownButtonProduct title={"Product"}></DropdownButtonProduct> */}
       </ContainerCol>
@@ -71,6 +90,14 @@ export default function SidebarMenu() {
       <ContainerCol className="sidebardiv">
         <div className="sidebartitle" onClick={() => navigate("/Contact")}>
           Contact
+        </div>
+      </ContainerCol>
+      <ContainerCol className="sidebardiv">
+        <div
+          className="sidebartitle"
+          onClick={() => navigate("/AdditionalInfo")}
+        >
+          Additional Information
         </div>
       </ContainerCol>
     </div>

@@ -14,6 +14,7 @@ import ContactScreen from "./screens/ContactScreen";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
 import FuelSavingStove from "./screens/FuelSavingStove";
+import AdditionalInfo from "./screens/AdditionalInfo";
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -26,7 +27,7 @@ function App() {
         <Router>
           <Routes>
             <Route
-              path="/Integratedsolarcooking/"
+              path="/Integratedsolarcooking"
               element={<LandingScreen isOpen={isOpen} />}
             />
             <Route
@@ -48,6 +49,10 @@ function App() {
             <Route
               path="/Contact"
               element={<ContactScreen isOpen={isOpen} />}
+            />
+            <Route
+              path="/AdditionalInfo"
+              element={<AdditionalInfo isOpen={isOpen} />}
             />
             <Route
               path="/*"

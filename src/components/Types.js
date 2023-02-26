@@ -2,13 +2,12 @@ import Stack from "react-bootstrap/Stack";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import p1 from "../images/q1.png";
-import p2 from "../images/step2.png";
+import p2 from "../images/q2.png";
 import p3 from "../images/q3.png";
 import p4 from "../images/q4.png";
 import p5 from "../images/q5.png";
 import p6 from "../images/q6.png";
 import p7 from "../images/q7.png";
-import { Link } from "react-router-dom";
 
 function Types() {
   return (
@@ -44,6 +43,7 @@ function Types() {
                 This type of cooker has the advantage of slow, even cooking of
                 large quantities of food. Variations include slanting the face
                 toward the sun and the number of reflectors.
+                <br />
               </text>
               <br />
               <Row>
@@ -139,6 +139,7 @@ function Types() {
                 >
                   here.
                 </a>
+                <br />
               </text>
               <br />
 
@@ -186,9 +187,9 @@ function Types() {
                 as on a conventional stove. The disadvantage is that they are
                 complicated to make, they must be turned often to follow the
                 sun.
+                <br />
               </text>
               <br />
-
               <Row>
                 <Col>
                   <text style={{ fontWeight: "bold" }}>Advantage</text>
@@ -241,6 +242,7 @@ function Types() {
                 can actually cook standing up. We are being warned that due to
                 the risk of fire it is preferred to be constructed in steel and
                 not wood.
+                <br />
               </text>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <img
@@ -260,6 +262,7 @@ function Types() {
                 is mainly used for institutional cooking. A great advantage is
                 that you can cook indoors.See:
                 http://www.solare-bruecke.org/index.php/en/die-scheffler-reflektoren
+                <br />
               </text>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <img
@@ -291,6 +294,7 @@ function Types() {
                 in glass technology is allowing for larger diameter tubes to be
                 fabricated, which will allow larger cooking trays to be inserted
                 inside.
+                <br />
               </text>
               <div style={{ display: "flex", justifyContent: "center" }}>
                 <img

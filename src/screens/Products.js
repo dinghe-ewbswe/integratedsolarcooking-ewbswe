@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import data from "../data/Products.json";
 import Prod1 from "../images/prod1.png";
 import Prod2 from "../images/prod2.jpeg";
-import Prod3 from "../images/prod3.png";
+import Prod3 from "../images/q2.png";
 import SidebarMenu from "../components/SidebarMenu";
 import GlobalStyle from "../GlobalStyles";
 

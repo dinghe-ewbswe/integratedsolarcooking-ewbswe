@@ -25,7 +25,7 @@ function ContactScreen(props) {
                 paddingRight: "100px",
               }}
             >
-              <h2 id="FirelessCooker">Contacts</h2>
+              <h2>Contacts</h2>
               <div style={{ marginBottom: "1em" }}>
                 Contact persons and additional links
               </div>

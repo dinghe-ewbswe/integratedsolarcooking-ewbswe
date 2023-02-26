@@ -44,15 +44,21 @@ function LandingScreen(props) {
         </div>
         <div style={{ display: "flex", justifyContent: "space-evenly" }}></div>
         <div className="Introtext">
-          <h1>Integrated Solar Cooking</h1>
+          <h1>Integrated Solar Cooking in Kenya</h1>
           Integrated solar cooking (ISC) can improve both health and economy for
           families that use firewood, charcoal, kerosene or gas for cooking. A
           transition to ISC will reduce deforestation and also reduce carbon
-          emission and thus reduce global warming.
-          <br />
+          emission and thus reduce global warming. This webpage includes the
+          following information:
+          <ul className="IntrotextList">
+            <li>Instruction of how the cookers work and how they are used.</li>
+            <li>How to combine the cookers when lack of sunlights.</li>
+            <li>Where to buy the equipment.</li>
+            <li>How to build your own equipment.</li>
+          </ul>
           <button
             className="ReadMoreButton"
-            onClick={() => navigate("/AboutSolarCooking")}
+            onClick={() => navigate("/AdditionalInfo")}
           >
             {" "}
             <span>Read more</span>
