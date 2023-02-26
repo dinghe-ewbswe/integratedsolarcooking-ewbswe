@@ -21,6 +21,24 @@ export default function SidebarMenu() {
       <ContainerCol className="sidebardiv">
         <div
           className="sidebartitle"
+          onClick={() => navigate("/FirelessCooker")}
+        >
+          {" "}
+          Fireless Cooker
+        </div>
+      </ContainerCol>
+      <ContainerCol className="sidebardiv">
+        <div
+          className="sidebartitle"
+          onClick={() => navigate("/FuelSavingStove")}
+        >
+          {" "}
+          Fuel Saving Stove{" "}
+        </div>
+      </ContainerCol>
+      <ContainerCol className="sidebardiv">
+        <div
+          className="sidebartitle"
           onClick={() => {
             navigate("/SolarCooker");
             setSolarCookerOpen(!SolarCookerOpen);
@@ -28,7 +46,7 @@ export default function SidebarMenu() {
           }}
         >
           {" "}
-          About Solar Cooker
+          Solar Cooker
         </div>
         {window.location.href.includes("/SolarCooker") == true ? (
           <>
@@ -62,30 +80,13 @@ export default function SidebarMenu() {
           <></>
         )}
       </ContainerCol>
+
       <ContainerCol className="sidebardiv">
         <div className="sidebartitle" onClick={() => navigate("/Products")}>
           {" "}
           Where to Buy
         </div>{" "}
         {/* <DropdownButtonProduct title={"Product"}></DropdownButtonProduct> */}
-      </ContainerCol>
-      <ContainerCol className="sidebardiv">
-        <div
-          className="sidebartitle"
-          onClick={() => navigate("/FirelessCooker")}
-        >
-          {" "}
-          Fireless Cooker
-        </div>
-      </ContainerCol>
-      <ContainerCol className="sidebardiv">
-        <div
-          className="sidebartitle"
-          onClick={() => navigate("/FuelSavingStove")}
-        >
-          {" "}
-          Fuel Saving Stove{" "}
-        </div>
       </ContainerCol>
       <ContainerCol className="sidebardiv">
         <div className="sidebartitle" onClick={() => navigate("/Contact")}>
@@ -97,7 +98,7 @@ export default function SidebarMenu() {
           className="sidebartitle"
           onClick={() => navigate("/AdditionalInfo")}
         >
-          Additional Information
+          Read More
         </div>
       </ContainerCol>
     </div>

@@ -14,7 +14,7 @@ import ContactScreen from "./screens/ContactScreen";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
 import FuelSavingStove from "./screens/FuelSavingStove";
-import AdditionalInfo from "./screens/AdditionalInfo";
+import AdditionalInfo from "./screens/ReadMore";
 
 function App() {
   const [isOpen, setOpen] = useState(false);
