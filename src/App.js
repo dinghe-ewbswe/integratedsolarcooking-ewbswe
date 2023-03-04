@@ -15,6 +15,7 @@ import Hamburger from "hamburger-react";
 import { useState } from "react";
 import FuelSavingStove from "./screens/FuelSavingStove";
 import AdditionalInfo from "./screens/ReadMore";
+import VendorTable from "./components/VendorsTable";
 
 function App() {
   const [isOpen, setOpen] = useState(false);
@@ -54,6 +55,7 @@ function App() {
               path="/AdditionalInfo"
               element={<AdditionalInfo isOpen={isOpen} />}
             />
+            <Route path="/Vendors" element={<VendorTable isOpen={isOpen} />} />
             <Route
               path="/*"
               element={<Navigate to="/Integratedsolarcooking" replace />}

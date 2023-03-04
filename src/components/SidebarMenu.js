@@ -86,6 +86,26 @@ export default function SidebarMenu() {
           {" "}
           Where to Buy
         </div>{" "}
+        {window.location.href.includes("/Products") == true ? (
+          <>
+            <div
+              className="subsidebartitle"
+              onClick={() => (window.location.href = "/Products#VendorMap")}
+            >
+              {" "}
+              Map of ISC Vendors in Kenya
+            </div>
+            <div
+              className="subsidebartitle"
+              onClick={() => navigate("/Vendors")}
+            >
+              {" "}
+              List of Vendors in Kenya
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
         {/* <DropdownButtonProduct title={"Product"}></DropdownButtonProduct> */}
       </ContainerCol>
       <ContainerCol className="sidebardiv">

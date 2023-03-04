@@ -8,6 +8,7 @@ import Prod2 from "../images/prod2.jpeg";
 import Prod3 from "../images/q2.png";
 import SidebarMenu from "../components/SidebarMenu";
 import GlobalStyle from "../GlobalStyles";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function ProductsScreen(props) {
   function PrintImage(props) {
@@ -32,35 +33,54 @@ function ProductsScreen(props) {
             paddingTop: "50px",
           }}
         >
+          {" "}
           <h2>Where to Buy your Cooker</h2>
+          <div style={{ marginBottom: "1em" }}>
+            <h3 id="VendorMap">Map of ISC Vendors in Kenya</h3>
+            Map showing location of solar cooking vendors. Click on the symbol
+            close to your place and you will get more information.{" "}
+            <div style={{ textAlign: "center" }}>
+              <object
+                type="text/html"
+                data="https://umap.openstreetmap.fr/sv/map/vendors-of-integrated-solar-cooking-kenya_873172"
+                width="1000px"
+                height="600px"
+              ></object>
+            </div>
+          </div>
           <br />
-          <Row xs={1} md={3} className="g-4">
-            {data.map((item, idx) => (
-              <Col>
-                <Card style={{ width: "20em" }}>
-                  <PrintImage name={idx} />
-                  <Card.Body>
-                    <h2>{item.Name}</h2>
-                    <Card.Text>
-                      {" "}
-                      <span style={{ fontWeight: "bold" }}>
-                        Entrepreneur:
-                      </span>{" "}
-                      <div>
-                        {item.Entrepreneur.split(", ").map((line, i) => (
-                          <div key={i}>{line}</div>
-                        ))}{" "}
-                      </div>
-                      <span style={{ fontWeight: "bold" }}>Price:</span>{" "}
-                      {item.Price} <br />
-                      <span style={{ fontWeight: "bold" }}>Info:</span>{" "}
-                      {item.Info} <br />
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>{" "}
+          <div style={{ marginBottom: "1em" }}>
+            <h3 id="VendorList">List of Vendors in Kenya</h3>
+            <div style={{ textAlign: "center" }}>
+              <Row xs={1} md={3} className="g-4">
+                {data.map((item, idx) => (
+                  <Col>
+                    <Card style={{ width: "20em" }}>
+                      <PrintImage name={idx} />
+                      <Card.Body>
+                        <h2>{item.Name}</h2>
+                        <Card.Text>
+                          {" "}
+                          <span style={{ fontWeight: "bold" }}>
+                            Entrepreneur:
+                          </span>{" "}
+                          <div>
+                            {item.Entrepreneur.split(", ").map((line, i) => (
+                              <div key={i}>{line}</div>
+                            ))}{" "}
+                          </div>
+                          <span style={{ fontWeight: "bold" }}>Price:</span>{" "}
+                          {item.Price} <br />
+                          <span style={{ fontWeight: "bold" }}>Info:</span>{" "}
+                          {item.Info} <br />
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>{" "}
+            </div>
+          </div>
         </div>
       </ContainerCol>
     </>

@@ -1,7 +1,7 @@
 import { ContainerCol } from "../GlobalStyles";
 import GlobalStyle from "../GlobalStyles";
 import SidebarMenu from "../components/SidebarMenu";
-import { FaBalanceScale, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 function AdditionalInfo(props) {
   return (
@@ -55,7 +55,7 @@ function AdditionalInfo(props) {
                 </div>{" "}
                 <div style={{ marginBottom: "1em" }}>
                   <h5>
-                    Solar Cookers International{" "}
+                    ISC Kenya Map{" "}
                     <a href="https://umap.openstreetmap.fr/sv/map/vendors-of-integrated-solar-cooking-kenya_873172">
                       <FaExternalLinkAlt />
                     </a>{" "}
