@@ -45,7 +45,7 @@ function FuelSavingStove(props) {
                 consumption. A fuel saving stove can be self made or bought and
                 is often a first step to reduce your fuel cost and the first
                 unit in your Integrated Solar Kitchen. <br /> Watch this{" "}
-                <a href="https://www.youtube.com/watch?v=r66jjYdBmg8&t=32s">
+                <a href="https://www.youtube.com/watch?v=r66jjYdBmg8">
                   link
                 </a>{" "}
                 on how you can produce A simple Rocket Stove that saves fuel.
