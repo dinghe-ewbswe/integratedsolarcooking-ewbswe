@@ -62,7 +62,7 @@ function Types() {
                       , also great for baking and slow cooking.
                     </li>
                     <li>
-                      Can be constructed with simple materials, with several
+                      Can be constructed with simple materials, several
                       high quality commercial designs also available.
                     </li>
                   </ul>
