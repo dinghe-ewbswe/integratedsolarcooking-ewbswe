@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/integratedsolarcooking/static/css/main.f4c0b8b0.css",
-    "main.js": "/integratedsolarcooking/static/js/main.0149074a.js",
+    "main.js": "/integratedsolarcooking/static/js/main.d3653d35.js",
     "static/js/787.0d0c0bc6.chunk.js": "/integratedsolarcooking/static/js/787.0d0c0bc6.chunk.js",
     "static/media/SolarCooker.JPG": "/integratedsolarcooking/static/media/SolarCooker.ddd972b9ae1e54081b22.JPG",
     "static/media/q7.png": "/integratedsolarcooking/static/media/q7.9cad55aea826d1e8e4dd.png",
@@ -23,11 +23,11 @@
     "static/media/step1.png": "/integratedsolarcooking/static/media/step1.571cb16576ad6507cc35.png",
     "index.html": "/integratedsolarcooking/index.html",
     "main.f4c0b8b0.css.map": "/integratedsolarcooking/static/css/main.f4c0b8b0.css.map",
-    "main.0149074a.js.map": "/integratedsolarcooking/static/js/main.0149074a.js.map",
+    "main.d3653d35.js.map": "/integratedsolarcooking/static/js/main.d3653d35.js.map",
     "787.0d0c0bc6.chunk.js.map": "/integratedsolarcooking/static/js/787.0d0c0bc6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4c0b8b0.css",
-    "static/js/main.0149074a.js"
+    "static/js/main.d3653d35.js"
   ]
 }
