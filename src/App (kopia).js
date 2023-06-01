@@ -28,7 +28,7 @@ function App() {
         <Router>
           <Routes>
             <Route
-              path="/Integratedsolarcooking"
+              path="/integratedsolarcooking-ewbswe"
               element={<LandingScreen isOpen={isOpen} />}
             />
             <Route
@@ -58,7 +58,7 @@ function App() {
             <Route path="/Vendors" element={<VendorTable isOpen={isOpen} />} />
             <Route
               path="/*"
-              element={<Navigate to="/Integratedsolarcooking" replace />}
+              element={<Navigate to="/integratedsolarcooking-ewbswe" replace />}
             />
           </Routes>
         </Router>

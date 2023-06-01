@@ -11,7 +11,7 @@ export default function SidebarMenu() {
     <div style={{ paddingTop: "50px" }}>
       <ContainerCol
         className="LogoTitle"
-        onClick={() => navigate("/Integratedsolarcooking")}
+        onClick={() => navigate("/integratedsolarcooking-ewbswe")}
       >
         {/* <img src={ewblogo} alt="Logo" style={{ height: "2.5em" }} /> */}
         <p style={{ fontSize: "24px", color: "#38ba7d" }}>
