@@ -1,3 +1,4 @@
+
 [
   {
     "Entrepreneur": "Didacus Pius Odhiambo",
@@ -21,9 +22,18 @@
     "Entrepreneur": "Mary Mumbi and Nicholas Kitembe",
     "Organisation": "Tonembee",
     "Enterprise": "",
-    "PhoneNo": "0000000000000",
+    "PhoneNo": "",
     "Address": [""],
     "Location": "Kithuia, Machakos",
     "MoreInfo": "Selling panel cookers, like Haines cooker and fireless cookers."
-  }
+  },
+  {
+    "Entrepreneur": "Samuel Odhiambo",
+    "Organisation": "Asulma Center",
+    "Enterprise": "",
+    "PhoneNo": "",
+    "Address": [""],
+    "Location": "Kariobangi, Nairob",
+    "MoreInfo": "We sell box cookers, Haines cookers, conical cookers\n fuel saving stoves, briquettes etc. \n We also train new entrepreneurs."
+  },
 ]
